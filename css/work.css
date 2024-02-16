@@ -1,0 +1,33 @@
+#work {
+    padding: 130px 0;
+    background-image: url(../images/work/Background.png);
+}
+
+.work__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.work__title {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.work__text {
+    max-width: 765px;
+    margin: 0 auto;
+    margin-bottom: 36px;
+    color: white;
+}
+
+.work__btn {
+    display: inline-block;
+    padding: 35px;
+    border-radius: 50%;
+    background-color: #fff;
+    background-image: url(../images/work/click.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}

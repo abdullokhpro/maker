@@ -47,3 +47,11 @@
         font-size: 15px;
     }
 }
+
+
+@media (min-width: 1440px) {
+    #hero {
+        width: 1440px;
+        margin: 0 auto;
+    }
+}

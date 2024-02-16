@@ -1,0 +1,145 @@
+#footer {
+    padding-top: 79px;
+    padding-bottom: 39px;
+    background-color: #2C353E;
+}
+
+.footer__items {
+    display: flex;
+    gap: 85px;
+    flex-wrap: wrap;
+    padding-bottom: 49px;
+}
+
+.footer__item {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: calc(25% - 63.75px);
+}
+
+.footer__item__title {
+    font-size: 21px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.footer__item__price, sup, .footer__price__main {
+    color: #fff;
+}
+
+.footer__price__main {
+    font-size: 38px;
+}
+
+.footer__text {
+    color: #fff;
+    opacity: 70%;
+}
+
+.link__btn {
+    margin-top: 20px;
+}
+
+.footer__link {
+    position: relative;
+    transition: 0.5s;
+    z-index: 1;
+    padding: 15px 30px;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.265);
+}
+
+.footer__link:hover {
+    color: #fff;
+}
+
+.footer__link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    transition: 1s;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.footer__link:hover::before {
+    transform: scaleX(1);
+}
+
+.footer__line {
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin-bottom: 40px;
+    background-color: #4B4B4B;
+}
+
+.footer__bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__nav__list {
+    display: flex;
+    gap: 30px;
+}
+
+.footer__nav__link {
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.footer__nav__link:hover {
+    color: var(--primary-color);
+}
+
+.footer__icons {
+    display: flex;
+    gap: 40px;
+}
+
+.footer__icons img {
+    cursor: pointer;
+}
+
+@media (max-width: 1080px) {
+    .footer__items {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer__item {
+        width: 40%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .footer__bottom {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    .footer__nav__list {
+        display: none;
+    }
+}
+
+@media (max-width: 650px) {
+    .footer__item {
+        width: 100%;
+    }
+}
